@@ -19,7 +19,7 @@ export default (state = initialState, action = {}) => {
       return { ...state, isPending: false, items: action.payload };
     }
     case GET_ITEMS_ERROR: {
-      return { initialState, error: action.payload };
+      return { ...initialState, error: action.payload };
     }
     case GET_ITEMS_PENDING: {
       return { ...state, isPending: true };
