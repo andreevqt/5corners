@@ -1,13 +1,132 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --gutter-width: 30px;
+  --container-width: 1140px;
+  --colors-gray: #9f9f9f;
+  --colors-body: #000;
+  --colors-white: #fff;
+  --colors-primary: #000;
+  --colors-danger: #D80909;
+  --border-color: var(--colors-gray);
+  --md: 768px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:focus {
+  outline: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+  color: var(--colors-body);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.link {
+  color: var(--colors-gray);
+  text-decoration: underline;
+}
+
+.text-regular {
+  font-weight: 400;
+}
+
+.text-headings {
+  font-weight: 700;
+}
+
+.text-regular--medium {
+  font-size: 18px;
+}
+
+.text-regular--default {
+  font-size: 16px;
+}
+
+.text-regular--small {
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .text-regular--small {
+    font-size: 14px;
+  }
+}
+
+.text-headings--big {
+  font-size: 30px;
+}
+
+@media (min-width: 768px) {
+  .text-headings--big {
+    font-size: 40px;
+  }
+}
+
+.text-headings--medium {
+  font-size: 26px;
+}
+
+@media (min-width: 768px) {
+  .text-headings--medium {
+    font-size: 28px;
+  }
+}
+
+.text-headings--default {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .text-headings--default {
+    font-size: 20px;
+  }
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.no-select {
+  user-select: none;
 }

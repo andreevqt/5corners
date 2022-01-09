@@ -1,0 +1,9 @@
+.toggle {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .toggle {
+    display: none;
+  }
+}

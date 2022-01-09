@@ -1,0 +1,17 @@
+.wrapper {
+  position: relative;
+}
+
+.counter {
+  position: absolute;
+  right: -4px;
+  top: -4px;
+  border-radius: 50%;
+  line-height: 16px;
+  font-size: 12px;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  background-color: var(--colors-primary);
+  color: var(--colors-white);
+}

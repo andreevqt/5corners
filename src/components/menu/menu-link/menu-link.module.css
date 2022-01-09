@@ -1,0 +1,9 @@
+.link {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--colors-gray);
+}
+
+.link:not(:last-of-type) {
+  margin-right: 30px;
+}

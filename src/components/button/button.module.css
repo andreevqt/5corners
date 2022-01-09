@@ -1,0 +1,14 @@
+.button {
+  border: 1px solid var(--colors-primary);
+  background-color: var(--colors-white);
+  padding: 24px;
+  width: 100%;
+}
+
+.button:hover {
+  color: var(--colors-white);
+  background-color: var(--colors-primary);
+}
+
+.button.outline {
+}

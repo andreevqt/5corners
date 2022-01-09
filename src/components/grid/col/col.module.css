@@ -1,0 +1,43 @@
+.col-base {
+  position: relative;
+  width: 100%;
+  padding-left: calc(var(--gutter-width) / 2);
+  padding-right: calc(var(--gutter-width) / 2);
+}
+
+.col,
+.col-3,
+.col-6,
+.col-md-6 {
+  composes: col-base;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.col-auto {
+  composes: col-base;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}

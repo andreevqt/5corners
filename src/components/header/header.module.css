@@ -1,0 +1,40 @@
+.bottom,
+.top {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.top {
+  display: flex;
+  padding: 30px 0;
+}
+
+.top-nav a {
+  font-size: 0;
+  color: var(--colors-body);
+}
+
+.top-nav a:not(:last-of-type) {
+  margin-right: 22px;
+}
+
+.bottom {
+  display: none;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .bottom {
+    display: flex;
+  }
+}
+
+.search {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .search {
+    display: block;
+  }
+}
