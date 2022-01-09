@@ -30,7 +30,7 @@ export default (state = initialState, action = {}) => {
         ...state,
         items: state.items.map((item) => (
           item.id === id
-            ? { ...item, amount: ++item.amount }
+            ? { ...item, amount: item.amount + 1 }
             : item
         ))
       };
@@ -41,7 +41,7 @@ export default (state = initialState, action = {}) => {
         ...state,
         items: state.items.map((item) => (
           item.id === id
-            ? { ...item, amount: item.amount > 1 ? --item.amount : item.amount }
+            ? { ...item, amount: item.amount > 1 ? item.amount - 1 : item.amount }
             : item
         ))
       };
